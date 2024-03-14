@@ -1,0 +1,98 @@
+{
+    "theme_augmentations": {
+        "color": "red",
+        "font": "Arial",
+        "size": "12px",
+        "background": "white",
+        "border": "1px solid black",
+        "radius": "5px",
+        "shadow": "2px 2px 2px 2px #888888"
+    },  
+    "component_names":
+    [
+        "Header",
+        "Sidebar",
+        "RightSideBar",
+        "CounterSection",
+        "OverviewSection",
+        "AllBidsSection",
+        "UpdateTable",
+        "allbids-card"
+    ],
+    "component_counts":   
+    {
+        "Header" : {
+            "count": 1,
+            "location": "Top of the page",
+            "description": "Searchbar, Darkmode, Wallet, Noticification and profile"
+        },               
+        "Sidebar" : {
+            "count": 1,
+            "location": "left of the page",
+            "description": "Title and List items in the conatiner"
+        },        
+        "RightSideBar": {
+            "count": 1,
+            "location": "right of the page",
+            "description": "charts, top-creator and top-platform",
+            "children": {
+                "chart-one": {
+                  "count": 1,
+                  "location": "top of the RightSideBar",
+                  "description": "it is doghnut chart showing stattistics"
+                },
+                "chart-two": {
+                    "count": 1,
+                    "location": "below chart-one of the RightSideBar",
+                    "description": "Graphchart to show different rates"
+                },
+                "top-creator": {
+                    "count": 1,
+                    "location": "below chart-two of the Rightsidebar",
+                    "description": "list of all top users"
+                },
+                "top-platform": {
+                    "count": 1,
+                    "location": "bottom of the RightSideBar",
+                    "description": "list of all top platforms"
+                }
+            }
+        },
+        "CounterSection":
+        {
+            "count": 1,
+            "location": "Top of the page of main section taking 100% width",
+            "description": "Displays a counter section with dynamic counting functionality of artworks, auction, creators and canceled"
+        },
+        "OverviewSection":
+        {
+            "count": 1,
+            "location": "below countersection component of main section taking 100% width",
+            "description": " Includes information like the item's title, ID, current bid amount, remaining time for bidding, user details, and options for adding to favorites or placing a bid."
+        },
+        "AllBidsSection":
+        {
+            "count": 1,
+            "location": "Mid of the page above updatetable component of main section taking 100% width",
+            "description": "Displays all bids with associated product cards, enabling users to view artwork and bid on items",
+            "children": {
+                "allbids-card":{
+                    "count": 8,
+                    "location": "In the AllBidsSection aligned using grid",
+                    "description": "Displays product cards, enabling users to view artwork and bid on items"
+                }
+            }
+        },
+        "UpdateTable":
+        {
+            "count": 1,
+            "location": "Bottom of the page of main section taking 100% width",
+            "description": "Table for displaying NFT updates with filter options."
+        }
+    },
+    "functionality":
+    {
+        "sidebar_toogle": "a feature that allows the sidebar to be hide",
+        "table_filtering": "a feature that allows the table to be filtered"
+    }
+}
